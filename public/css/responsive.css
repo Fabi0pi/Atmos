@@ -1,0 +1,32 @@
+/********************************MEDIA QUERyS*************************************/
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px){
+   .findMe, .findMe .spanTxt, .findMe:hover .spanTxt{
+       display: none;
+   }
+   .map{
+     padding-top: 13rem;
+   }
+   .copy{
+     display: table-row;
+   }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media screen and (min-width: 481px) and (max-width: 767px) { 
+    .findMe, .findMe .spanTxt, .findMe:hover .spanTxt{
+       display: none;
+    }
+    .map{
+      padding-top: 13rem;
+    }
+}
+
+    
+  /* Media Query for Tablets Ipads portrait mode */
+  @media screen and (min-width: 768px) and (max-width: 991px){
+    .map{
+      padding-top: 13rem;
+    }
+  }

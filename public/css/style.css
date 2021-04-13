@@ -1,0 +1,144 @@
+/* IMPORT */
+@import url("./responsive.css");
+@import url("./animation.css");
+
+/*GLOBAL*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* NAV SECTION */
+.navbar{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo{
+  padding-left: 3rem;
+  width: 10rem;
+  height: 3rem;
+  animation: 2s ease-out 0s 1 slideInFromRightLogo;
+}
+
+/* MAIN */
+.site-main{
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* FORM SECTION */
+.search-fields{
+  height: 18rem;
+}
+
+.intro{
+  padding-top: 5rem;
+  height: 100%;
+}
+
+form{
+  animation: 2s ease-out 0s 1 slideInFromRightForm;
+}
+
+#lens{
+  animation: 3s ease-out 0s 1 slideInFromBottomLens;
+}
+
+#marker{
+  animation: 3.7s ease-out 0s 1 slideInFromBottomMarker;
+}
+
+.findMe{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.findMe .spanTxt{
+  max-width: 0;
+  display: inline-block;
+  -webkit-transition: 1.5s, max-width 2s;
+  transition: 1.5s, max-width 2s;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.findMe:hover .spanTxt{
+  max-width: 12rem;
+  color: white;
+}
+
+.txt1{
+  animation: 3.7s ease-out 0s 1 slideInFromLeftTxt1;
+}
+
+.txt2{
+  animation: 3s ease-out 0s 1 slideInFromLeftTxt2;
+}
+
+.txt3{
+  animation: 2s ease-out 0s 1 slideInFromRightLogo;
+}
+
+/* RESULT SECTION */
+.result{
+  margin-top: 4rem;
+  text-align: center;
+  height: 18rem;
+}
+
+.dataProcess{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.aqi{
+  width: 100%;
+  height: 2rem;
+  border-radius: 1rem;
+  opacity: 0.9;
+}
+
+/* MAP SECTION */
+.map-side{ 
+  height: 24rem;
+}
+
+#map {
+  margin: 0 auto;
+  width: 99%;
+  height: 98%;
+  opacity: 0.7;
+  animation: 2s ease-out 0s 1 slideInFromBottomMap;
+}
+
+/* FOOTER SECTION */
+.copy{
+  margin: 0 auto;
+  animation: 2s ease-out 0s 1 slideInFromTopCopy;
+}
+
+
+

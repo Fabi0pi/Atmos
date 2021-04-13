@@ -1,0 +1,79 @@
+/********************************KEYFRAMES*************************************/
+
+/* LOGO */
+@keyframes slideInFromRightLogo {
+    0% {
+      transform: translateX(2000%);
+    }
+    80% {
+      transform: translateX(0);
+    }
+  }
+
+/* MAP */  
+  @keyframes slideInFromBottomMap {
+    0% {
+      transform: translateY(2000%);
+    }
+    80% {
+      transform: translateY(0);
+    }
+  }
+
+/* FORM */  
+  @keyframes slideInFromRightForm {
+    0% {
+      transform: translateX(2000%);
+    }
+    80% {
+      transform: translateX(0);
+    }
+  }
+
+/* TXTS */
+    @keyframes slideInFromLeftTxt1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromLeftTxt2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/* BOTTOMS */  
+    @keyframes slideInFromBottomLens {
+    0% {
+      transform: translatey(9000%);
+    }
+    100% {
+      transform: translatey(0%);
+    }
+  }
+  
+  @keyframes slideInFromBottomMarker {
+    0% {
+      transform: translatey(9000%);
+    }
+    100% {
+      transform: translatey(0%);
+    }
+  }
+  
+  /* FOOTER */
+  @keyframes slideInFromTopCopy {
+    0% {
+      transform: translatey(-9000%);
+    }
+    50% {
+      transform: translatey(0%);
+    }
+  }

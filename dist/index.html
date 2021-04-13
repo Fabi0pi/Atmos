@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Fabio A. Piras">
+
+  <title>ATMOS</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="../public/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Leaflet's css -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+
+  <!-- Leaflet's script -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <!-- Bootstrap css file -->
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+
+  <!-- Css Style -->
+  <link href="../public/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--============================== START NAV AREA ===========================-->
+  <nav class="navbar navbar-light bg-light text-dark">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="./../public/img/atmosBlack.png">
+    </a>
+  </nav>
+  <!--============================== END NAV AREA =============================-->
+
+  <!--============================== START MAIN AREA ==========================-->
+  <main class="site-main">
+
+    <section class="search-fields">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 intro">
+            <form class="form-inline search">
+              <div class="input-group">
+                <input type="text" class="form-control nameCity bg-transparent" placeholder="Enter City Name">
+                  <button class="btn btn-outline-secondary searchCity" type="submit">
+                    <i class="fas fa-search" id="lens"></i>
+                  </button>
+                  <button type="submit" class="btn btn-outline-secondary findMe">
+                    <i class="fas fa-map-marker-alt" id="marker"></i>
+                    <span class="spanTxt">Geolocated!</span>
+                  </button>
+              </div>
+            </form>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-transparent txt2" id="text2"><i class="fas fa-search"></i> Enter the name of the city you are interested in.</li>
+            <li class="list-group-item bg-transparent txt1" id="text1"><i class = "fas fa-map-marker-alt"></i> Where are you? Find out the air quality</li>
+            <li class="list-group-item bg-transparent txt3" id="text3"><small class="text-muted">Air quality levels are constantly updated.</small></li>
+          </ul>
+        </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 result">
+              <div class="dataProcess"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!--============================== END MAIN AREA ============================-->
+
+  <!--============================== START MAP AREA ===========================-->
+  <section class="map">
+    <div class="row map-side">
+      <div class="container-fluid col-xl-12 col-lg-12 col-md-12 col-sm-12" id='map'></div>
+    </div>
+  </section>
+  <!--============================== END MAP AREA =============================-->
+
+  <!--============================== START FOOTER AREA ========================-->
+  <footer class="text-center text-white">
+    <div class="container">
+      <section class="mb-4">
+        <p class="text-center text-dark copy">
+          © 2021 Copyright, Fabio A. Piras.
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/fabi0pi/" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/fabio-piras-07a090133/" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/Fabi0pi" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </p>
+      </section>
+    </div>
+  </footer> 
+  <!--============================== END FOOTER AREA ==========================-->
+
+
+<!-- Lodash script-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
+
+<!-- js files -->
+<script src="./main.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../public/js/front/bootstrap.min.js"></script>
+
+<!-- Jquery js -->
+<script src="../public/js/front/jquery3.6.0.min.js"></script>
+
+<!-- Particles js -->
+<script src="../public/js/front/particles.js"></script>
+<script src="../public/js/front/particles.min.js"></script>
+
+<canvas class="background"></canvas>    <!-- BACKGROUND SETTING -->
+
+</body>
+
+</html>
