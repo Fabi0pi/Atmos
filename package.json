@@ -13,6 +13,7 @@
     "API",
     "key"
   ],
+  "main": "webpack.config.js",
   "author": "Fabio A. Piras",
   "license": "MIT",
   "dependencies": {
