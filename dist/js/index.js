@@ -1,4 +1,13 @@
-/**************************************OPITONS*********************************/
+ 
+/****************./src/function.js.js*****OPITONS*********************************/
+ 
+ /* INITIALIZE PARTICLES PLUGIN BACKGROUND */
+ window.onload= function() {
+   var particles = Particles.init({
+     selector: '.background',
+     color: '#DA0463'
+   });
+ };
 
 // VARIABLES
 
@@ -87,6 +96,7 @@ function typesAirQuality(aqiValue, aqi, feedback) {
     "No data available for this city, please search again!";
   }
 };
+
 
 // EXPORTS
 export { dataProcess, findCity, changeDom, cleanContainer };

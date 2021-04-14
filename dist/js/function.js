@@ -1,6 +1,6 @@
 /********************************FUNCTIONS*************************************/
 /* IMPORT */
-import { findCity, changeDom } from "./option.js"
+import { findCity, changeDom } from "./index.js"
 import { air_key, mymap } from "./map.js";
 
 // CONST, VAR

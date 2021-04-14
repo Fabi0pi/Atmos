@@ -24,6 +24,5 @@ const waqiLayer = L.tileLayer(
 );
 mymap.addLayer(tiles).addLayer(waqiLayer);
 
-
 // EXPORT
 export { air_key, mymap };
