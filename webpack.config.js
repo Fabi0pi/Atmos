@@ -11,6 +11,8 @@ module.exports = {
   },
   target: 'node',
   plugins: [
-    new Dotenv(),
+    new Dotenv({
+      systemvars: true,
+    }),
   ],
 };
