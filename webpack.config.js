@@ -12,7 +12,7 @@ module.exports = {
   target: 'node',
   plugins: [
     new Dotenv({
-      systemvars: true,                                  // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
+      systemvars: true,                                                             // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
     }),
   ],
 };
