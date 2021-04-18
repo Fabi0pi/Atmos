@@ -1,12 +1,12 @@
 /********************************MEDIA QUERyS*************************************/
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 480px){
+@media screen and (min-width: 300px) and (max-width: 480px){
    .findMe, .findMe .spanTxt, .findMe:hover .spanTxt{
        display: none;
    }
    .map{
-     padding-top: 13rem;
+     padding-top: 20rem;
    }
    .copy{
      display: table-row;
@@ -19,7 +19,7 @@
        display: none;
     }
     .map{
-      padding-top: 13rem;
+      padding-top: 15rem;
     }
 }
 
