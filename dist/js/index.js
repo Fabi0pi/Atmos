@@ -51,7 +51,7 @@ function generateDomElement(information) {
   feedback.classList.add("feedback");
 
   const aqiValue = _.get(information, "data.aqi", "-");
-  city.textContent = _.get(information, "data.city.name", "No data available");
+  city.textContent = _.get(information, "data.city.name", "No data available for this city, please search again!");
   aqi.textContent = `AQI: ${aqiValue}`;
 
   // INFO DISPLAY
