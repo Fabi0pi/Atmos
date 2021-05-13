@@ -22,7 +22,9 @@ If you want know more about: [Start2impact](http://start2impact.it/)
 ![Layer 3](https://user-images.githubusercontent.com/75267018/114564859-025fc380-9c71-11eb-8ac1-a7d842131f64.png) Hazardous AQI (300 - 500)<br>
 <br><img width="1337" alt="Schermata 2021-04-13 alle 16 06 01" src="https://user-images.githubusercontent.com/75267018/114566041-2bcd1f00-9c72-11eb-94d1-bee60286570c.png">
 
-# Usage
+# Built With
+- JavaScript
+- HTML & CSS
 - API [AICQN](https://aqicn.org/map/world/);
 - MAP [LEAFLETJS](https://leafletjs.com);
 
